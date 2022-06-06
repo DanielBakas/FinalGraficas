@@ -712,11 +712,17 @@
     <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
         <HintPath>/Users/danielbakas/Documents/Escuela/Tec/Semestre 8/Gráficas Computacionales/Computational Graphics/Library/ScriptAssemblies/Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.ProBuilder.AddOns.Editor">
+        <HintPath>/Users/danielbakas/Documents/Escuela/Tec/Semestre 8/Gráficas Computacionales/Computational Graphics/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder">
+        <HintPath>/Users/danielbakas/Documents/Escuela/Tec/Semestre 8/Gráficas Computacionales/Computational Graphics/Library/ScriptAssemblies/Unity.ProBuilder.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection">
         <HintPath>/Users/danielbakas/Documents/Escuela/Tec/Semestre 8/Gráficas Computacionales/Computational Graphics/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.VisualScripting.Flow">
-        <HintPath>/Users/danielbakas/Documents/Escuela/Tec/Semestre 8/Gráficas Computacionales/Computational Graphics/Library/ScriptAssemblies/Unity.VisualScripting.Flow.dll</HintPath>
+    <Reference Include="Unity.ProBuilder.Editor">
+        <HintPath>/Users/danielbakas/Documents/Escuela/Tec/Semestre 8/Gráficas Computacionales/Computational Graphics/Library/ScriptAssemblies/Unity.ProBuilder.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
         <HintPath>/Users/danielbakas/Documents/Escuela/Tec/Semestre 8/Gráficas Computacionales/Computational Graphics/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
@@ -726,6 +732,9 @@
     </Reference>
     <Reference Include="Unity.Rider.Editor">
         <HintPath>/Users/danielbakas/Documents/Escuela/Tec/Semestre 8/Gráficas Computacionales/Computational Graphics/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Flow">
+        <HintPath>/Users/danielbakas/Documents/Escuela/Tec/Semestre 8/Gráficas Computacionales/Computational Graphics/Library/ScriptAssemblies/Unity.VisualScripting.Flow.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
         <HintPath>/Users/danielbakas/Documents/Escuela/Tec/Semestre 8/Gráficas Computacionales/Computational Graphics/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
@@ -741,6 +750,9 @@
     </Reference>
     <Reference Include="Unity.Services.Core.Analytics">
         <HintPath>/Users/danielbakas/Documents/Escuela/Tec/Semestre 8/Gráficas Computacionales/Computational Graphics/Library/ScriptAssemblies/Unity.Services.Core.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
+        <HintPath>/Users/danielbakas/Documents/Escuela/Tec/Semestre 8/Gráficas Computacionales/Computational Graphics/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Shared.Editor">
         <HintPath>/Users/danielbakas/Documents/Escuela/Tec/Semestre 8/Gráficas Computacionales/Computational Graphics/Library/ScriptAssemblies/Unity.VisualScripting.Shared.Editor.dll</HintPath>

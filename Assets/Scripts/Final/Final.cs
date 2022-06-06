@@ -29,7 +29,7 @@ public class Final : MonoBehaviour
         // New Model
         this.model = new Model(name: "Cars", speed: 0.0001f, unit: 1);
         // Create Cars
-        this.createComponents(amount: 1);
+        this.createComponents(amount: 5);
         // Populate Cars
         this.setInitialValues();
         // Trace Path
@@ -42,28 +42,37 @@ public class Final : MonoBehaviour
     {
         foreach (Car car in this.model.components)
         {
-            curve = Path.curves[car.curveIndex];
-            if (car.deltaPosition < 1)
+            if (car.index == 0)
             {
-                if (Input.GetKey("up") && car.speed < car.speedLimit)
-                    car.speed += this.model.speed;
-                else if (Input.GetKey("down") && car.speed > 0)
-                    car.speed -= this.model.speed * 5;
-                else if (car.speed > 0)
-                    car.speed -= this.model.speed * 3;
-                if (car.speed <= 0) car.speed = 0;
-                car.deltaPosition += car.speed;
-                car.positionV = BezierUtil.calculate(curve, car.deltaPosition);
+                curve = Path.curves[car.curveIndex];
+                if (car.deltaPosition < 1)
+                {
+                    if (Input.GetKey("up") && car.speed < car.speedLimit)
+                        car.speed += this.model.speed;
+                    else if (Input.GetKey("down") && car.speed > 0)
+                        car.speed -= this.model.speed * 5;
+                    else if (car.speed > 0)
+                        car.speed -= this.model.speed * 3;
+                    if (car.speed <= 0) car.speed = 0;
+                    car.deltaPosition += car.speed;
+                    car.positionV = BezierUtil.calculate(curve, car.deltaPosition);
+                }
+                else
+                {
+                    Debug.Log("HOLA");
+                    car.deltaPosition = 0;
+                    car.curveIndex = (car.curveIndex < Path.curves.Length - 1) ? car.curveIndex + 1 : 0;
+                }
+                car.positionV.y = 20;
+                car.prepare();
+                car.update(car.positionM * car.rotationM * car.scaleM);
             }
             else
             {
-                Debug.Log("HOLA");
-                car.deltaPosition = 0;
-                car.curveIndex = (car.curveIndex < Path.curves.Length - 1) ? car.curveIndex + 1 : 0;
+                car.positionV.y = 20;
+                car.prepare();
+                car.update(car.positionM * car.rotationM * car.scaleM);
             }
-            car.positionV.y = 20;
-            car.prepare();
-            car.update(car.positionM * car.rotationM * car.scaleM);
         }
     }
 
@@ -89,7 +98,7 @@ public class Final : MonoBehaviour
         foreach (Car car in this.model.components)
         {
             car.deltaPosition = 0;
-            car.rotationV = Cars.rotations[car.index];
+            car.rotationV = new Vector3(x: -90, y: 0);
             car.scaleV *= 500;
             car.speedLimit = this.model.speed * 100;
         }

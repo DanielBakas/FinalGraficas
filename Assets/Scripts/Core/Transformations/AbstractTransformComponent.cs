@@ -51,7 +51,6 @@ public abstract class AbstractTransformComponent : TransformBehavior
     // Matrix Methods
     public void prepareTransformations()
     {
-        // TODO: Implement recursion
         this.orbitM = Transformations.RotateM(this.orbitV.x, Transformations.AXIS.AX_X);
         this.orbitM *= Transformations.RotateM(this.orbitV.y, Transformations.AXIS.AX_Y);
         this.orbitM *= Transformations.RotateM(this.orbitV.z, Transformations.AXIS.AX_Z);
