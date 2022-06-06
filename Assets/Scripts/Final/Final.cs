@@ -59,7 +59,6 @@ public class Final : MonoBehaviour
                 }
                 else
                 {
-                    Debug.Log("HOLA");
                     car.deltaPosition = 0;
                     car.curveIndex = (car.curveIndex < Path.curves.Length - 1) ? car.curveIndex + 1 : 0;
                 }
